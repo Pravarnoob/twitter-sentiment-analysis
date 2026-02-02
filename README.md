@@ -25,4 +25,4 @@ Model trained and pipeline created. Deployment in progress.
 ## 🚀 Live Demo
 
 🔗 **Deployed Application:**  
-https://your-render-url.onrender.com
+https://twitter-sentiment-analysis-2-m5kn.onrender.com/
