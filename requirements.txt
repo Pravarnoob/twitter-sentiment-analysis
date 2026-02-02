@@ -1,39 +1,5 @@
-# Project Requirements
-
-This document lists the software and library requirements needed to run the Twitter Sentiment Analysis project locally and in production.
-
----
-
-## System Requirements
-- Python 3.9 or higher
-- Internet connection (for initial NLTK resource download)
-
----
-
-## Python Libraries
-
-The following Python libraries are required:
-
-- **streamlit**  
-  Used to build and deploy the interactive web application.
-
-- **scikit-learn**  
-  Used for TF-IDF feature extraction, model training, and pipeline creation.
-
-- **pandas**  
-  Used for data loading, manipulation, and preprocessing.
-
-- **numpy**  
-  Used for numerical operations and probability handling.
-
-- **nltk**  
-  Used for text preprocessing tasks such as stopword removal and lemmatization.
-
----
-
-## Installation
-
-Install all required dependencies using:
-
-```bash
-pip install -r requirements.txt
+streamlit
+scikit-learn
+pandas
+numpy
+nltk
