@@ -22,3 +22,7 @@ and deployment using Streamlit for real-time sentiment prediction.
 ## Status
 Model trained and pipeline created. Deployment in progress.
 
+## 🚀 Live Demo
+
+🔗 **Deployed Application:**  
+https://your-render-url.onrender.com
