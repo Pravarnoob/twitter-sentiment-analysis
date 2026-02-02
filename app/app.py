@@ -12,7 +12,7 @@ st.set_page_config(
 # Load models
 @st.cache_resource
 def load_model():
-    with open(r"C:\Users\prava\OneDrive\Desktop\models\sentiment_pipeline.pkl", "rb") as file:
+    with open("model/sentiment_pipeline.pkl", "rb") as file:
         model = pickle.load(file)
     return model
 
@@ -45,3 +45,4 @@ if st.button("Predict Sentiment"):
 
 st.markdown("---")
 st.caption("Built using NLP, TF-IDF & Logistic Regression")
+
