@@ -4,3 +4,6 @@ pandas
 numpy
 nltk
 matplotlib
+fastapi
+uvicorn
+python-multipart
