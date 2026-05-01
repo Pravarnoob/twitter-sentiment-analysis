@@ -25,4 +25,5 @@ Model trained and pipeline created. Deployment in progress.
 ## 🚀 Live Demo
 
 🔗 **Deployed Application:**  
-https://twitter-sentiment-analysis-4-261j.onrender.com/
+
+https://twitter-sentiment-analysis-6-xkmh.onrender.com/
