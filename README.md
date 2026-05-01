@@ -50,58 +50,58 @@ Features
 
 **API Endpoints**
 
-**Predict Sentiment (Single Text)*
+*Predict Sentiment (Single Text)*
 
-"POST /predict"
+**`POST /predict`**
 
 Request Body:
 
-{
+`{
   "text": "I love this product"
-}
+}`
 
 "Response":
 
-{
+`{
   "input": "I love this product",
   "sentiment": "positive",
   "confidence": 97.5
-}
+}`
 
-**Batch Prediction (CSV Upload)*
+*Batch Prediction (CSV Upload)*
 
-"POST /predict_csv"
+**`POST /predict_csv`**
 
 Input:
 
 Upload a CSV file with a column named "text"
 
-Example:
+`Example:`
 
-text
+`text
 I love this product
-This is terrible
+This is terrible`
 
 "Response":
 
-{
+`{
   "total_rows": 2,
   "results": [
     {"text": "I love this product", "sentiment": "positive"},
     {"text": "This is terrible", "sentiment": "negative"}
   ]
-}
+}`
 
 Example Usage (Python)
 
-import requests
+`import requests`
 
-url = "https://twitter-sentiment-analysis-7-7mgm.onrender.com/predict"
+`url = "https://twitter-sentiment-analysis-7-7mgm.onrender.com/predict"`
 
-data = {"text": "Amazing product!"}
+`data = {"text": "Amazing product!"}`
 
-response = requests.post(url, json=data)
-print(response.json())
+`response = requests.post(url, json=data)
+print(response.json())`
 
 Tech Stack
 
