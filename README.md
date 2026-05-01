@@ -52,7 +52,7 @@ Features
 
 *Predict Sentiment (Single Text)*
 
-**`POST /predict`**
+1. **`POST /predict`**
 
 Request Body:
 
@@ -70,7 +70,7 @@ Request Body:
 
 *Batch Prediction (CSV Upload)*
 
-**`POST /predict_csv`**
+2. **`POST /predict_csv`**
 
 Input:
 
@@ -92,6 +92,7 @@ This is terrible`
   ]
 }`
 
+---
 Example Usage (Python)
 
 `import requests`
@@ -102,6 +103,8 @@ Example Usage (Python)
 
 `response = requests.post(url, json=data)
 print(response.json())`
+
+---
 
 Tech Stack
 
