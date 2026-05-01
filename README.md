@@ -29,12 +29,11 @@ Model trained and pipeline created. Deployment in progress.
 https://twitter-sentiment-analysis-6-xkmh.onrender.com/
 
 ---
-
-## Sentiment Analysis API
+## 🚀 Sentiment Analysis API
 
 This project includes a standalone REST API built using FastAPI to serve sentiment predictions for text and CSV inputs.
 
-🚀 **Live API**
+**Live API**
 
 Base URL:
 https://twitter-sentiment-analysis-7-7mgm.onrender.com/
@@ -42,19 +41,18 @@ https://twitter-sentiment-analysis-7-7mgm.onrender.com/
 Interactive API Docs:
 https://twitter-sentiment-analysis-7-7mgm.onrender.com/docs
 
-**Features**
+Features
 
--  Single text sentiment prediction
--  Batch prediction using CSV upload
--  Confidence score output
--  Deployed and publicly accessible
-
+- Single text sentiment prediction
+- Batch prediction using CSV upload
+- Confidence score output
+- Deployed and publicly accessible
 
 **API Endpoints**
 
-1. Predict Sentiment (Single Text)
+**Predict Sentiment (Single Text)*
 
-POST "/predict"
+"POST /predict"
 
 Request Body:
 
@@ -62,7 +60,7 @@ Request Body:
   "text": "I love this product"
 }
 
-Response:
+"Response":
 
 {
   "input": "I love this product",
@@ -70,10 +68,9 @@ Response:
   "confidence": 97.5
 }
 
+**Batch Prediction (CSV Upload)*
 
-2. Batch Prediction (CSV Upload)
-
-POST "/predict_csv"
+"POST /predict_csv"
 
 Input:
 
@@ -85,7 +82,7 @@ text
 I love this product
 This is terrible
 
-Response:
+"Response":
 
 {
   "total_rows": 2,
@@ -95,8 +92,7 @@ Response:
   ]
 }
 
-
-**Example Usage (Python)**
+Example Usage (Python)
 
 import requests
 
@@ -107,12 +103,19 @@ data = {"text": "Amazing product!"}
 response = requests.post(url, json=data)
 print(response.json())
 
+Tech Stack
 
-**Architecture**
+- FastAPI
+- Uvicorn
+- Scikit-learn
+- Pandas
+- NumPy
+
+Architecture
 
 The API exposes the trained sentiment analysis model via REST endpoints, enabling integration with frontend applications or external services.
 
+## ⚠️ Note
 
-⚠️ **Note**
+The API is hosted on Render (free tier), so the first request may take a few seconds due to cold start.
 
-- The API is hosted on Render (free tier), so the first request may take a few seconds due to cold start.
